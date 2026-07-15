@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MoveMatch — Build Your Move</title>
+  <meta name="description" content="Build the right moving plan before choosing a moving company.">
+  <link rel="canonical" href="https://movematchsf.com/">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Static form lets Netlify detect every field during deploy. -->
+  <form name="move-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input name="form-name">
+    <input name="bot-field">
+    <input name="priority">
+    <input name="move-type">
+    <input name="packing">
+    <input name="special-items">
+    <input name="other-special-item">
+    <input name="additional-help">
+    <input name="heavy-item-description">
+    <input name="other-additional-help">
+    <input name="move-date">
+    <input name="pickup-zip">
+    <input name="destination-zip">
+    <input name="access">
+    <input name="recommended-style">
+    <input name="recommended-crew">
+    <input name="recommended-consultation">
+    <input name="recommendation-reason">
+    <input name="customer-name">
+    <input name="phone">
+    <input name="email">
+    <input name="contact-consent">
+  </form>
+
+  <header class="header">
+    <div class="shell header__inner">
+      <a class="brand" href="/" aria-label="MoveMatch home">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i></span>
+        <span>MoveMatch</span>
+      </a>
+      <button class="button button--dark js-open-builder">Build My Move</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero__grid">
+        <div>
+          <p class="eyebrow">A smarter way to plan your move</p>
+          <h1>Moving is stressful.<br>Choosing movers shouldn’t be.</h1>
+          <p class="lead">
+            Tell us what matters most. We’ll help you build the right moving
+            plan and connect you with trusted licensed professionals.
+          </p>
+          <div class="hero__actions">
+            <button class="button button--primary js-open-builder">Build My Move <span>→</span></button>
+            <span class="microcopy">Takes about 2 minutes</span>
+          </div>
+          <div class="trust-row">
+            <span>Clear recommendations</span>
+            <span>Licensed professionals</span>
+            <span>No pressure</span>
+          </div>
+        </div>
+
+        <aside class="profile-preview">
+          <div class="profile-preview__top">
+            <span>Your Move Profile</span>
+            <span class="pill">Matched</span>
+          </div>
+          <div class="preview-card preview-card--accent">
+            <span class="label">Recommended move style</span>
+            <strong>Protected Move</strong>
+            <p>Balanced protection, care and value.</p>
+          </div>
+          <div class="preview-stats">
+            <div><span class="label">Crew</span><strong>3 movers</strong></div>
+            <div><span class="label">Consultation</span><strong>Video estimate</strong></div>
+          </div>
+          <div class="preview-card">
+            <span class="label">Why this recommendation?</span>
+            <p>You value furniture protection and have fragile items that need extra care.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="shell">
+        <p class="eyebrow">How it works</p>
+        <h2>Understand your move before you book it.</h2>
+        <div class="grid grid--3">
+          <article class="card step-card"><span class="step-number">01</span><h3>Tell us what matters</h3><p>Price, protection, speed or full-service convenience.</p></article>
+          <article class="card step-card"><span class="step-number">02</span><h3>Get your move plan</h3><p>See the recommended move style, crew and consultation type.</p></article>
+          <article class="card step-card"><span class="step-number">03</span><h3>Book with confidence</h3><p>Connect with a licensed professional who fits your move.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <p class="eyebrow">Four Move Styles</p>
+        <h2>There is no one “best” move.<br>Only the best move for you.</h2>
+        <div class="grid grid--4">
+          <article class="card move-style"><div class="move-style__icon">$</div><h3>Essential</h3><p>For customers who want to keep costs as low as possible.</p><ul><li>Customer handles most packing</li><li>Basic furniture protection</li><li>Fast, efficient service</li></ul></article>
+          <article class="card move-style move-style--featured"><div class="move-style__icon">P</div><h3>Protected</h3><p>The best balance between cost, protection and peace of mind.</p><ul><li>Extra furniture protection</li><li>TV and artwork care</li><li>Professional disassembly</li></ul></article>
+          <article class="card move-style"><div class="move-style__icon">W</div><h3>White Glove</h3><p>Maximum care for valuable homes and belongings.</p><ul><li>Premium materials</li><li>Experienced crews</li><li>Detailed moving plan</li></ul></article>
+          <article class="card move-style"><div class="move-style__icon">C</div><h3>Concierge</h3><p>We help coordinate the move from packing through setup.</p><ul><li>Packing and unpacking</li><li>Furniture placement</li><li>Hands-off experience</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="shell callout">
+        <div>
+          <p class="eyebrow">Complex move?</p>
+          <h2>Some moves deserve a closer look.</h2>
+          <p>For larger, high-value or logistically complex moves, we may recommend a complimentary video or in-home consultation.</p>
+        </div>
+        <button class="button button--primary js-open-builder">Start My Plan →</button>
+      </div>
+    </section>
+
+    <section class="section section--white final-cta">
+      <div class="shell">
+        <p class="eyebrow">Ready?</p>
+        <h2>The right move starts with the right match.</h2>
+        <button class="button button--primary js-open-builder">Build My Move →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <span>© <span id="year"></span> MoveMatch</span>
+      <span>MoveMatch helps customers plan their move and connect with licensed moving providers. <a href="/privacy.html">Privacy Policy</a></span>
+    </div>
+  </footer>
+
+  <div class="builder" id="builder" aria-hidden="true">
+    <div class="builder__panel" role="dialog" aria-modal="true" aria-labelledby="builderTitle">
+      <div class="builder__header">
+        <div class="brand"><span class="brand__mark" aria-hidden="true"><i></i><i></i></span><span>MoveMatch</span></div>
+        <button class="close-button" id="closeBuilder" aria-label="Close">×</button>
+      </div>
+
+      <div class="progress">
+        <div class="progress__track"><div class="progress__bar" id="progressBar"></div></div>
+        <span id="progressText">Step 1 of 6</span>
+      </div>
+
+      <form id="moveForm" name="move-request" method="POST" action="/success.html" accept-charset="UTF-8">
+        <input type="hidden" name="form-name" value="move-request">
+        <input type="hidden" name="special-items" id="specialItemsField">
+        <input type="hidden" name="additional-help" id="additionalHelpField">
+        <input type="hidden" name="recommended-style" id="recommendedStyleField">
+        <input type="hidden" name="recommended-crew" id="recommendedCrewField">
+        <input type="hidden" name="recommended-consultation" id="recommendedConsultationField">
+        <input type="hidden" name="recommendation-reason" id="recommendationReasonField">
+
+        <section class="builder-step is-active" data-step="1">
+          <p class="eyebrow">Start with your priorities</p>
+          <h2 id="builderTitle">What matters most to you?</h2>
+          <p class="step-intro">Choose the one that feels most important.</p>
+          <div class="option-grid option-grid--2">
+            <label class="option"><input required type="radio" name="priority" value="Essential"><b>Save Money</b><span>Keep the total cost as low as possible.</span></label>
+            <label class="option"><input type="radio" name="priority" value="Protected"><b>Protect My Furniture</b><span>Extra care for furniture and fragile items.</span></label>
+            <label class="option"><input type="radio" name="priority" value="Fast"><b>Finish Faster</b><span>Use the right crew size to reduce total time.</span></label>
+            <label class="option"><input type="radio" name="priority" value="Concierge"><b>Handle Everything</b><span>Packing, moving, unpacking and setup.</span></label>
+          </div>
+        </section>
+
+        <section class="builder-step" data-step="2">
+          <p class="eyebrow">Move type</p>
+          <h2>What are you moving?</h2>
+          <p class="step-intro">A rough category is enough for now.</p>
+          <div class="option-grid option-grid--2">
+            <label class="option"><input required type="radio" name="move-type" value="Studio"><b>Studio</b></label>
+            <label class="option"><input type="radio" name="move-type" value="1 Bedroom Apartment"><b>1 Bedroom Apartment</b></label>
+            <label class="option"><input type="radio" name="move-type" value="2 Bedroom Apartment"><b>2 Bedroom Apartment</b></label>
+            <label class="option"><input type="radio" name="move-type" value="3+ Bedroom / House"><b>3+ Bedroom / House</b></label>
+            <label class="option option--wide"><input type="radio" name="move-type" value="Office / Commercial Space"><b>Office / Commercial Space</b><span>Office, clinic, retail or another business location.</span></label>
+          </div>
+        </section>
+
+        <section class="builder-step" data-step="3">
+          <p class="eyebrow">Packing</p>
+          <h2>How much packing help do you need?</h2>
+          <p class="step-intro">You can adjust this later.</p>
+          <div class="option-grid">
+            <label class="option"><input required type="radio" name="packing" value="None"><b>None</b><span>I’ll have everything boxed and ready.</span></label>
+            <label class="option"><input type="radio" name="packing" value="Fragile items only"><b>Fragile items only</b><span>Kitchen, artwork, TVs or similar items.</span></label>
+            <label class="option"><input type="radio" name="packing" value="Partial packing"><b>Partial packing</b><span>Help with selected rooms or categories.</span></label>
+            <label class="option"><input type="radio" name="packing" value="Full packing"><b>Full packing</b><span>Pack nearly everything for me.</span></label>
+          </div>
+        </section>
+
+        <section class="builder-step" data-step="4">
+          <p class="eyebrow">Details</p>
+          <h2>Anything that needs extra care?</h2>
+          <p class="step-intro">Special items and optional extra help can affect the crew, equipment and estimate.</p>
+
+          <div class="group">
+            <h3>Special Items Requiring Extra Care</h3>
+            <p class="group__hint">Select any items that may require special handling or protection.</p>
+            <div class="option-grid option-grid--2">
+              <label class="option"><input type="checkbox" data-special value="TVs"><b>TVs</b></label>
+              <label class="option"><input type="checkbox" data-special value="Artwork"><b>Artwork</b></label>
+              <label class="option"><input type="checkbox" data-special value="Antiques"><b>Antiques</b></label>
+              <label class="option"><input type="checkbox" data-special value="Piano"><b>Piano</b></label>
+              <label class="option"><input type="checkbox" data-special value="Safe"><b>Safe</b></label>
+              <label class="option"><input type="checkbox" id="otherSpecialToggle" data-special value="Other special item"><b>Other Special Item</b></label>
+            </div>
+            <label class="conditional-field" id="otherSpecialWrap">
+              <span>Please describe the special item</span>
+              <input type="text" name="other-special-item" placeholder="Aquarium, marble table, sculpture...">
+            </label>
+          </div>
+
+          <div class="group">
+            <h3>Anything else we can help with? <small>(Optional)</small></h3>
+            <p class="group__hint">Selecting these helps us recommend the right crew and provide a more accurate estimate.</p>
+            <div class="option-grid option-grid--2">
+              <label class="option"><input type="checkbox" data-additional value="TV Dismounting"><b>TV Dismounting</b></label>
+              <label class="option"><input type="checkbox" data-additional value="TV Mounting"><b>TV Mounting</b></label>
+              <label class="option"><input type="checkbox" data-additional value="Washer & Dryer Disconnect"><b>Washer & Dryer Disconnect</b></label>
+              <label class="option"><input type="checkbox" data-additional value="Washer & Dryer Reconnect"><b>Washer & Dryer Reconnect</b></label>
+              <label class="option"><input type="checkbox" id="heavyItemToggle" data-additional value="Heavy Item (250+ lbs)"><b>Heavy Item (250+ lbs)</b><span>Safe, treadmill, marble table or large gym equipment.</span></label>
+              <label class="option"><input type="checkbox" data-additional value="New Furniture Assembly"><b>New Furniture Assembly</b><span>New furniture still in its original packaging.</span></label>
+              <label class="option"><input type="checkbox" data-additional value="Junk Removal"><b>Junk Removal</b></label>
+              <label class="option"><input type="checkbox" data-additional value="Storage"><b>Storage</b></label>
+              <label class="option option--wide"><input type="checkbox" id="otherHelpToggle" data-additional value="Other additional help"><b>Other</b></label>
+            </div>
+
+            <label class="conditional-field" id="heavyItemWrap">
+              <span>What is the heavy item?</span>
+              <input type="text" name="heavy-item-description" placeholder="Safe, treadmill, marble table...">
+            </label>
+
+            <label class="conditional-field" id="otherHelpWrap">
+              <span>Please describe what else you need help with</span>
+              <input type="text" name="other-additional-help" placeholder="Describe the service or item">
+            </label>
+          </div>
+        </section>
+
+        <section class="builder-step" data-step="5">
+          <p class="eyebrow">Logistics</p>
+          <h2>Tell us the basics.</h2>
+          <p class="step-intro">This helps us recommend the right consultation.</p>
+          <div class="field-grid">
+            <label><span>Move date</span><input required type="date" name="move-date"></label>
+            <label><span>Pickup ZIP</span><input required inputmode="numeric" maxlength="5" name="pickup-zip" placeholder="94110"></label>
+            <label><span>Destination ZIP</span><input required inputmode="numeric" maxlength="5" name="destination-zip" placeholder="94107"></label>
+            <label><span>Access</span><select required name="access"><option value="">Select one</option><option>No stairs</option><option>One flight</option><option>Multiple flights</option><option>Elevator / building restrictions</option></select></label>
+          </div>
+        </section>
+
+        <section class="builder-step" data-step="6">
+          <p class="eyebrow">Your recommendation</p>
+          <h2>Your MoveMatch Recommendation</h2>
+          <div class="result-grid">
+            <div><span class="label">Move Style</span><strong id="resultStyle">Protected Move</strong></div>
+            <div><span class="label">Crew</span><strong id="resultCrew">3 movers</strong></div>
+            <div><span class="label">Consultation</span><strong id="resultConsultation">Video estimate</strong></div>
+            <div><span class="label">Packing</span><strong id="resultPacking">Fragile items only</strong></div>
+            <div class="result-grid__wide"><span class="label">Special Items</span><strong id="resultSpecialItems">None selected</strong></div>
+            <div class="result-grid__wide"><span class="label">Additional Help</span><strong id="resultAdditionalHelp">None selected</strong></div>
+          </div>
+          <div class="recommendation-reason">
+            <span class="label">Why this recommendation?</span>
+            <p id="resultReason">Your move benefits from a balanced plan with extra protection.</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Want us to review your plan?</h3>
+            <p class="step-intro">Leave your details and a MoveMatch specialist will follow up.</p>
+            <div class="field-grid">
+              <label><span>Name</span><input required name="customer-name" placeholder="Your name"></label>
+              <label><span>Phone</span><input required name="phone" placeholder="(415) 555-1234"></label>
+              <label class="field-grid__wide"><span>Email</span><input required type="email" name="email" placeholder="you@example.com"></label>
+              <label class="consent field-grid__wide">
+                <input required type="checkbox" name="contact-consent" value="yes">
+                <span>I agree that MoveMatch may contact me by phone, text or email about my moving request.</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <div class="builder-actions" id="builderActions">
+          <button type="button" class="text-button" id="backButton">Back</button>
+          <button type="button" class="button button--primary" id="nextButton">Continue →</button>
+        </div>
+        <p class="form-error" id="formError" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/recommendation-engine.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
