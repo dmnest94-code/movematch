@@ -67,3 +67,49 @@
   .founder-note{padding:27px 23px;border-radius:21px}
   .founder-note h3{font-size:29px}
 }
+
+
+/* v4.2 — larger, comfortably spaced reading and action typography */
+.hero-grid{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr)}
+.hero-content{min-width:0}
+.hero h1{
+  font-size:clamp(56px,5.5vw,82px);
+  font-weight:780;
+  line-height:1.12;
+  letter-spacing:-.02em;
+  text-wrap:wrap;
+}
+.hero h1 em{font-size:.96em;letter-spacing:inherit}
+.hero-lead{font-size:19px;line-height:1.65}
+.btn{font-size:16px;font-weight:750;line-height:1.35;letter-spacing:0}
+.btn-small{font-size:15px}
+.desktop-nav a{font-size:14px}
+.text-link{font-size:16px;font-weight:750}
+.hero-small{font-size:14px;line-height:1.5}
+.eyebrow{font-size:12px;letter-spacing:.11em}
+.section h2,.wizard-step h2{letter-spacing:-.027em;line-height:1.15}
+.plan-card>p:not(.plan-kicker),.plan-card ul,.process-card p{font-size:15px}
+.about-copy>p,.founder-note p{font-size:16px}
+.founder-note h3{letter-spacing:-.025em}
+.founder-note__signature span{font-size:14px}
+.footer-contact a,.footer-link,.footer-brand p{font-size:14px}
+.wizard-lead,.choice small,.priority-item small,.field{font-size:15px}
+.field input,.field select,.field textarea{font-size:16px}
+@media(max-width:1060px){
+  .hero h1{font-size:clamp(52px,5.6vw,72px)}
+  .nav-wrap{gap:18px}
+}
+@media(max-width:800px){
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .hero h1{font-size:clamp(48px,8vw,72px)}
+}
+@media(max-width:640px){
+  .hero h1{font-size:clamp(38px,10.6vw,60px);line-height:1.13;letter-spacing:-.015em}
+  .hero h1 em{font-size:.96em;letter-spacing:inherit}
+  .hero-lead{font-size:17px}
+  .nav-wrap{gap:8px}
+  .nav-wrap>.btn{font-size:13px;padding:11px 12px;gap:6px}
+  .hero-ctas>.text-link{font-size:16px}
+  .hero-small{font-size:13px}
+  .section h2{font-size:clamp(34px,8.5vw,44px)}
+}
