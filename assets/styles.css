@@ -4,3 +4,66 @@
 @media(max-width:800px){.desktop-nav{display:none}.hero-grid{grid-template-columns:1fr;padding-top:66px;gap:20px}.hero-visual{height:440px}.hero h1{max-width:630px}.section-head{grid-template-columns:1fr;gap:15px}.section-head p{max-width:660px}.office-grid,.about-grid{grid-template-columns:1fr;gap:42px}.office-art{max-width:540px;min-height:390px}.plan-grid{gap:10px}.plan-card{padding:20px 16px}.plan-card h3{font-size:25px}.cta-card{padding:38px;align-items:start;flex-direction:column}.ticker-inner{flex-wrap:wrap;justify-content:center;gap:13px;padding:18px 0}.footer-inner{gap:18px}}
 @media(max-width:640px){.container{width:min(100% - 34px,1180px)}.site-header .nav-wrap{min-height:67px}.nav-wrap>.btn{padding:11px 12px;gap:8px;font-size:10px}.brand{font-size:19px}.brand-symbol{width:29px;height:29px;margin-right:5px}.brand-symbol i{height:14px}.hero-grid{padding-top:56px;padding-bottom:49px}.hero h1{font-size:clamp(47px,11vw,62px)}.hero-lead{font-size:15px}.hero-ctas{align-items:stretch;gap:15px;flex-direction:column}.hero-ctas>.btn{justify-content:center}.hero-visual{height:355px;margin-inline:-4px}.orb-a{width:330px;height:330px}.orb-b{width:150px;height:150px}.preview-stack{max-width:335px;padding:18px;border-radius:20px}.preview-name{font-size:37px}.preview-feature{padding:17px}.preview-heading{font-size:18px;padding:15px 0}.preview-stats>div{padding:12px}.preview-stats strong{font-size:11px}.preview-foot{margin-top:12px}.floating-note{bottom:4px;left:8px;font-size:10px}.section{padding:75px 0}.section h2{font-size:43px}.plan-grid,.process-grid{grid-template-columns:1fr;gap:12px}.plan-card{min-height:auto;padding:24px}.plan-card.is-featured{transform:none}.plan-icon{margin:24px 0 12px}.plan-card ul{margin-bottom:20px}.office-art{min-height:340px}.office-art-buildings{height:185px}.building-b{height:165px}.building-a{height:110px}.building-c{height:80px}.office-art-footer{font-size:28px}.office-copy h2{font-size:42px}.process-card{min-height:180px}.process-glyph{margin:12px 0}.about-grid{gap:25px}.about-quote{min-height:300px}.cta-card{padding:32px 25px}.cta-card h2{font-size:44px}.footer-inner{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column}.wizard{padding:18px 18px 22px;border-radius:16px;max-height:calc(100dvh - 16px)}.modal-overlay{padding:8px}.wizard-progress{margin:17px 0 25px}.option-grid,.form-grid{grid-template-columns:1fr}.choice{min-height:110px}.field.full{grid-column:auto}.wizard-step h2{font-size:34px}.wizard-actions{gap:8px}.wizard-actions>.btn{padding:12px}.policy-layout{padding:50px 0}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* v4.1 — readable hero typography and photo-free founder note */
+.hero h1{
+  font-size:clamp(44px,4.6vw,72px);
+  line-height:1.14;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+  overflow-wrap:normal;
+}
+.hero h1 em{
+  display:inline;
+  font-size:.84em;
+  letter-spacing:-.042em;
+}
+.founder-note{
+  background:#e8efd8;
+  border:1px solid #d7e4c6;
+  border-radius:28px;
+  padding:clamp(26px,3.1vw,43px);
+}
+.founder-note__eyebrow{
+  color:#61804e;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.14em;
+  margin-bottom:24px;
+}
+.founder-note h3{
+  font-size:clamp(26px,2.6vw,37px);
+  line-height:1.19;
+  letter-spacing:-.045em;
+  margin:0 0 22px;
+  font-weight:790;
+}
+.founder-note h3 em{font-style:normal;color:#62863e}
+.founder-note p{font-size:14px;color:#3e5949;line-height:1.82;margin:0 0 16px}
+.founder-note__signature{
+  border-top:1px solid #bdcfaf;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  padding-top:20px;
+  margin-top:26px;
+}
+.founder-note__signature strong{font-size:15px}
+.founder-note__signature span{font-size:12px;color:#607666}
+@media(max-width:1060px){
+  .hero h1{font-size:clamp(43px,5.0vw,64px)}
+}
+@media(max-width:800px){
+  .hero h1{font-size:clamp(43px,7vw,66px)}
+}
+@media(max-width:640px){
+  .hero h1{
+    font-size:clamp(36px,9.0vw,52px);
+    line-height:1.16;
+    letter-spacing:-.042em;
+  }
+  .hero h1 em{font-size:.83em;letter-spacing:-.035em}
+  .founder-note{padding:27px 23px;border-radius:21px}
+  .founder-note h3{font-size:29px}
+}
