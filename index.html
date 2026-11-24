@@ -1,305 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MoveMatch — Build Your Move</title>
-  <meta name="description" content="Build the right moving plan before choosing a moving company.">
-  <link rel="canonical" href="https://movematchsf.com/">
-  <link rel="stylesheet" href="/css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17231e">
+<meta name="description" content="MoveMatch SF helps you plan your Bay Area move. Explore Essential, Protected, and White Glove moving styles, or request an on-site estimate for office moves.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MoveMatch SF — Find your kind of move">
+<meta property="og:description" content="A clearer way to plan a Bay Area move. Residential moving styles and on-site office estimates.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<title>MoveMatch SF — Find your kind of move</title>
+<link rel="stylesheet" href="/assets/styles.css?v=4.2">
+<script defer src="/js/config.js"></script>
+<script defer src="/js/app.js"></script>
 </head>
 <body>
-  <!-- Static form lets Netlify detect every field during deploy. -->
-  <form name="move-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input name="form-name">
-    <input name="bot-field">
-    <input name="priority">
-    <input name="move-type">
-    <input name="packing">
-    <input name="special-items">
-    <input name="other-special-item">
-    <input name="additional-help">
-    <input name="heavy-item-description">
-    <input name="other-additional-help">
-    <input name="move-date">
-    <input name="pickup-zip">
-    <input name="destination-zip">
-    <input name="access">
-    <input name="recommended-style">
-    <input name="recommended-crew">
-    <input name="recommended-consultation">
-    <input name="recommendation-reason">
-    <input name="customer-name">
-    <input name="phone">
-    <input name="email">
-    <input name="contact-consent">
-  </form>
-
-  <header class="header">
-    <div class="shell header__inner">
-      <a class="brand" href="/" aria-label="MoveMatch home">
-        <span class="brand__mark" aria-hidden="true"><i></i><i></i></span>
-        <span>MoveMatch</span>
-      </a>
-      <button class="button button--dark js-open-builder">Build My Move</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="shell hero__grid">
-        <div>
-          <p class="eyebrow">A smarter way to plan your move</p>
-          <h1>Moving is stressful.<br>Choosing movers shouldn’t be.</h1>
-          <p class="lead">
-            Tell us what matters most. We’ll help you build the right moving
-            plan and connect you with trusted licensed professionals.
-          </p>
-          <div class="hero__actions">
-            <button class="button button--primary js-open-builder">Build My Move <span>→</span></button>
-            <span class="microcopy">Takes about 2 minutes</span>
-          </div>
-          <div class="trust-row">
-            <span>Clear recommendations</span>
-            <span>Licensed professionals</span>
-            <span>No pressure</span>
-          </div>
-        </div>
-
-        <aside class="profile-preview">
-          <div class="profile-preview__top">
-            <span>Your Move Profile</span>
-            <span class="pill">Matched</span>
-          </div>
-          <div class="preview-card preview-card--accent">
-            <span class="label">Recommended move style</span>
-            <strong>Protected Move</strong>
-            <p>Balanced protection, care and value.</p>
-          </div>
-          <div class="preview-stats">
-            <div><span class="label">Crew</span><strong>3 movers</strong></div>
-            <div><span class="label">Consultation</span><strong>Video estimate</strong></div>
-          </div>
-          <div class="preview-card">
-            <span class="label">Why this recommendation?</span>
-            <p>You value furniture protection and have fragile items that need extra care.</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section section--white">
-      <div class="shell">
-        <p class="eyebrow">How it works</p>
-        <h2>Understand your move before you book it.</h2>
-        <div class="grid grid--3">
-          <article class="card step-card"><span class="step-number">01</span><h3>Tell us what matters</h3><p>Price, protection, speed or full-service convenience.</p></article>
-          <article class="card step-card"><span class="step-number">02</span><h3>Get your move plan</h3><p>See the recommended move style, crew and consultation type.</p></article>
-          <article class="card step-card"><span class="step-number">03</span><h3>Book with confidence</h3><p>Connect with a licensed professional who fits your move.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <p class="eyebrow">Four Move Styles</p>
-        <h2>There is no one “best” move.<br>Only the best move for you.</h2>
-        <div class="grid grid--4">
-          <article class="card move-style"><div class="move-style__icon">$</div><h3>Essential</h3><p>For customers who want to keep costs as low as possible.</p><ul><li>Customer handles most packing</li><li>Basic furniture protection</li><li>Fast, efficient service</li></ul></article>
-          <article class="card move-style move-style--featured"><div class="move-style__icon">P</div><h3>Protected</h3><p>The best balance between cost, protection and peace of mind.</p><ul><li>Extra furniture protection</li><li>TV and artwork care</li><li>Professional disassembly</li></ul></article>
-          <article class="card move-style"><div class="move-style__icon">W</div><h3>White Glove</h3><p>Maximum care for valuable homes and belongings.</p><ul><li>Premium materials</li><li>Experienced crews</li><li>Detailed moving plan</li></ul></article>
-          <article class="card move-style"><div class="move-style__icon">C</div><h3>Concierge</h3><p>We help coordinate the move from packing through setup.</p><ul><li>Packing and unpacking</li><li>Furniture placement</li><li>Hands-off experience</li></ul></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--compact">
-      <div class="shell callout">
-        <div>
-          <p class="eyebrow">Complex move?</p>
-          <h2>Some moves deserve a closer look.</h2>
-          <p>For larger, high-value or logistically complex moves, we may recommend a complimentary video or in-home consultation.</p>
-        </div>
-        <button class="button button--primary js-open-builder">Start My Plan →</button>
-      </div>
-    </section>
-
-    <section class="section section--white final-cta">
-      <div class="shell">
-        <p class="eyebrow">Ready?</p>
-        <h2>The right move starts with the right match.</h2>
-        <button class="button button--primary js-open-builder">Build My Move →</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="shell footer__inner">
-      <span>© <span id="year"></span> MoveMatch</span>
-      <span>MoveMatch helps customers plan their move and connect with licensed moving providers. <a href="/privacy.html">Privacy Policy</a></span>
-    </div>
-  </footer>
-
-  <div class="builder" id="builder" aria-hidden="true">
-    <div class="builder__panel" role="dialog" aria-modal="true" aria-labelledby="builderTitle">
-      <div class="builder__header">
-        <div class="brand"><span class="brand__mark" aria-hidden="true"><i></i><i></i></span><span>MoveMatch</span></div>
-        <button class="close-button" id="closeBuilder" aria-label="Close">×</button>
-      </div>
-
-      <div class="progress">
-        <div class="progress__track"><div class="progress__bar" id="progressBar"></div></div>
-        <span id="progressText">Step 1 of 6</span>
-      </div>
-
-      <form id="moveForm" name="move-request" method="POST" action="/success.html" accept-charset="UTF-8">
-        <input type="hidden" name="form-name" value="move-request">
-        <input type="hidden" name="special-items" id="specialItemsField">
-        <input type="hidden" name="additional-help" id="additionalHelpField">
-        <input type="hidden" name="recommended-style" id="recommendedStyleField">
-        <input type="hidden" name="recommended-crew" id="recommendedCrewField">
-        <input type="hidden" name="recommended-consultation" id="recommendedConsultationField">
-        <input type="hidden" name="recommendation-reason" id="recommendationReasonField">
-
-        <section class="builder-step is-active" data-step="1">
-          <p class="eyebrow">Start with your priorities</p>
-          <h2 id="builderTitle">What matters most to you?</h2>
-          <p class="step-intro">Choose the one that feels most important.</p>
-          <div class="option-grid option-grid--2">
-            <label class="option"><input required type="radio" name="priority" value="Essential"><b>Save Money</b><span>Keep the total cost as low as possible.</span></label>
-            <label class="option"><input type="radio" name="priority" value="Protected"><b>Protect My Furniture</b><span>Extra care for furniture and fragile items.</span></label>
-            <label class="option"><input type="radio" name="priority" value="Fast"><b>Finish Faster</b><span>Use the right crew size to reduce total time.</span></label>
-            <label class="option"><input type="radio" name="priority" value="Concierge"><b>Handle Everything</b><span>Packing, moving, unpacking and setup.</span></label>
-          </div>
-        </section>
-
-        <section class="builder-step" data-step="2">
-          <p class="eyebrow">Move type</p>
-          <h2>What are you moving?</h2>
-          <p class="step-intro">A rough category is enough for now.</p>
-          <div class="option-grid option-grid--2">
-            <label class="option"><input required type="radio" name="move-type" value="Studio"><b>Studio</b></label>
-            <label class="option"><input type="radio" name="move-type" value="1 Bedroom Apartment"><b>1 Bedroom Apartment</b></label>
-            <label class="option"><input type="radio" name="move-type" value="2 Bedroom Apartment"><b>2 Bedroom Apartment</b></label>
-            <label class="option"><input type="radio" name="move-type" value="3+ Bedroom / House"><b>3+ Bedroom / House</b></label>
-            <label class="option option--wide"><input type="radio" name="move-type" value="Office / Commercial Space"><b>Office / Commercial Space</b><span>Office, clinic, retail or another business location.</span></label>
-          </div>
-        </section>
-
-        <section class="builder-step" data-step="3">
-          <p class="eyebrow">Packing</p>
-          <h2>How much packing help do you need?</h2>
-          <p class="step-intro">You can adjust this later.</p>
-          <div class="option-grid">
-            <label class="option"><input required type="radio" name="packing" value="None"><b>None</b><span>I’ll have everything boxed and ready.</span></label>
-            <label class="option"><input type="radio" name="packing" value="Fragile items only"><b>Fragile items only</b><span>Kitchen, artwork, TVs or similar items.</span></label>
-            <label class="option"><input type="radio" name="packing" value="Partial packing"><b>Partial packing</b><span>Help with selected rooms or categories.</span></label>
-            <label class="option"><input type="radio" name="packing" value="Full packing"><b>Full packing</b><span>Pack nearly everything for me.</span></label>
-          </div>
-        </section>
-
-        <section class="builder-step" data-step="4">
-          <p class="eyebrow">Details</p>
-          <h2>Anything that needs extra care?</h2>
-          <p class="step-intro">Special items and optional extra help can affect the crew, equipment and estimate.</p>
-
-          <div class="group">
-            <h3>Special Items Requiring Extra Care</h3>
-            <p class="group__hint">Select any items that may require special handling or protection.</p>
-            <div class="option-grid option-grid--2">
-              <label class="option"><input type="checkbox" data-special value="TVs"><b>TVs</b></label>
-              <label class="option"><input type="checkbox" data-special value="Artwork"><b>Artwork</b></label>
-              <label class="option"><input type="checkbox" data-special value="Antiques"><b>Antiques</b></label>
-              <label class="option"><input type="checkbox" data-special value="Piano"><b>Piano</b></label>
-              <label class="option"><input type="checkbox" data-special value="Safe"><b>Safe</b></label>
-              <label class="option"><input type="checkbox" id="otherSpecialToggle" data-special value="Other special item"><b>Other Special Item</b></label>
-            </div>
-            <label class="conditional-field" id="otherSpecialWrap">
-              <span>Please describe the special item</span>
-              <input type="text" name="other-special-item" placeholder="Aquarium, marble table, sculpture...">
-            </label>
-          </div>
-
-          <div class="group">
-            <h3>Anything else we can help with? <small>(Optional)</small></h3>
-            <p class="group__hint">Selecting these helps us recommend the right crew and provide a more accurate estimate.</p>
-            <div class="option-grid option-grid--2">
-              <label class="option"><input type="checkbox" data-additional value="TV Dismounting"><b>TV Dismounting</b></label>
-              <label class="option"><input type="checkbox" data-additional value="TV Mounting"><b>TV Mounting</b></label>
-              <label class="option"><input type="checkbox" data-additional value="Washer & Dryer Disconnect"><b>Washer & Dryer Disconnect</b></label>
-              <label class="option"><input type="checkbox" data-additional value="Washer & Dryer Reconnect"><b>Washer & Dryer Reconnect</b></label>
-              <label class="option"><input type="checkbox" id="heavyItemToggle" data-additional value="Heavy Item (250+ lbs)"><b>Heavy Item (250+ lbs)</b><span>Safe, treadmill, marble table or large gym equipment.</span></label>
-              <label class="option"><input type="checkbox" data-additional value="New Furniture Assembly"><b>New Furniture Assembly</b><span>New furniture still in its original packaging.</span></label>
-              <label class="option"><input type="checkbox" data-additional value="Junk Removal"><b>Junk Removal</b></label>
-              <label class="option"><input type="checkbox" data-additional value="Storage"><b>Storage</b></label>
-              <label class="option option--wide"><input type="checkbox" id="otherHelpToggle" data-additional value="Other additional help"><b>Other</b></label>
-            </div>
-
-            <label class="conditional-field" id="heavyItemWrap">
-              <span>What is the heavy item?</span>
-              <input type="text" name="heavy-item-description" placeholder="Safe, treadmill, marble table...">
-            </label>
-
-            <label class="conditional-field" id="otherHelpWrap">
-              <span>Please describe what else you need help with</span>
-              <input type="text" name="other-additional-help" placeholder="Describe the service or item">
-            </label>
-          </div>
-        </section>
-
-        <section class="builder-step" data-step="5">
-          <p class="eyebrow">Logistics</p>
-          <h2>Tell us the basics.</h2>
-          <p class="step-intro">This helps us recommend the right consultation.</p>
-          <div class="field-grid">
-            <label><span>Move date</span><input required type="date" name="move-date"></label>
-            <label><span>Pickup ZIP</span><input required inputmode="numeric" maxlength="5" name="pickup-zip" placeholder="94110"></label>
-            <label><span>Destination ZIP</span><input required inputmode="numeric" maxlength="5" name="destination-zip" placeholder="94107"></label>
-            <label><span>Access</span><select required name="access"><option value="">Select one</option><option>No stairs</option><option>One flight</option><option>Multiple flights</option><option>Elevator / building restrictions</option></select></label>
-          </div>
-        </section>
-
-        <section class="builder-step" data-step="6">
-          <p class="eyebrow">Your recommendation</p>
-          <h2>Your MoveMatch Recommendation</h2>
-          <div class="result-grid">
-            <div><span class="label">Move Style</span><strong id="resultStyle">Protected Move</strong></div>
-            <div><span class="label">Crew</span><strong id="resultCrew">3 movers</strong></div>
-            <div><span class="label">Consultation</span><strong id="resultConsultation">Video estimate</strong></div>
-            <div><span class="label">Packing</span><strong id="resultPacking">Fragile items only</strong></div>
-            <div class="result-grid__wide"><span class="label">Special Items</span><strong id="resultSpecialItems">None selected</strong></div>
-            <div class="result-grid__wide"><span class="label">Additional Help</span><strong id="resultAdditionalHelp">None selected</strong></div>
-          </div>
-          <div class="recommendation-reason">
-            <span class="label">Why this recommendation?</span>
-            <p id="resultReason">Your move benefits from a balanced plan with extra protection.</p>
-          </div>
-
-          <div class="contact-card">
-            <h3>Want us to review your plan?</h3>
-            <p class="step-intro">Leave your details and a MoveMatch specialist will follow up.</p>
-            <div class="field-grid">
-              <label><span>Name</span><input required name="customer-name" placeholder="Your name"></label>
-              <label><span>Phone</span><input required name="phone" placeholder="(415) 555-1234"></label>
-              <label class="field-grid__wide"><span>Email</span><input required type="email" name="email" placeholder="you@example.com"></label>
-              <label class="consent field-grid__wide">
-                <input required type="checkbox" name="contact-consent" value="yes">
-                <span>I agree that MoveMatch may contact me by phone, text or email about my moving request.</span>
-              </label>
-            </div>
-          </div>
-        </section>
-
-        <div class="builder-actions" id="builderActions">
-          <button type="button" class="text-button" id="backButton">Back</button>
-          <button type="button" class="button button--primary" id="nextButton">Continue →</button>
-        </div>
-        <p class="form-error" id="formError" role="alert"></p>
-      </form>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="MoveMatch SF home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i></span> MoveMatch<span class="brand-sf">SF</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#residential">Residential</a><a href="#office">Office moves</a><a href="#how">How it works</a><a href="#about">About</a>
+    </nav>
+    <button class="btn btn-dark btn-small" type="button" data-start="residential">Build my move <span aria-hidden="true">↗</span></button>
   </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> SAN FRANCISCO · BAY AREA MOVING</div>
+        <h1 id="hero-title">The right move.<br><em>Without the guesswork.</em></h1>
+        <p class="hero-lead">Moving isn't one-size-fits-all. Tell us what matters, get a practical starting plan, and take the next step with more confidence.</p>
+        <div class="hero-ctas"><button class="btn btn-accent" data-start="residential" type="button">Find my move style <span aria-hidden="true">↗</span></button><button class="text-link" type="button" data-start="office">Planning an office move? <span aria-hidden="true">↗</span></button></div>
+        <div class="hero-small"><span class="check-circle" aria-hidden="true">✓</span> Residential & office relocations <span class="divider-dot">·</span> No instant-price promises</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a personalized moving plan">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="preview-stack">
+          <div class="preview-topline"><span class="preview-mark">MM<span>•</span>SF</span><span class="preview-detail">YOUR MOVING PROFILE <span>↗</span></span></div>
+          <div class="preview-heading"><span>Made for your move.</span><span class="preview-spark" aria-hidden="true">✳</span></div>
+          <div class="preview-feature"><span class="mini-label">SUGGESTED STYLE</span><span class="preview-name">Protected<span class="preview-arrow">↗</span></span><span class="preview-feature-desc">Practical planning. Extra attention to your furniture and fragile items.</span></div>
+          <div class="preview-stats"><div><span class="mini-label">PRIORITY</span><strong>Peace of mind</strong></div><div><span class="mini-label">NEXT STEP</span><strong>Review details</strong></div></div>
+          <div class="preview-foot"><div class="tiny-circles"><span></span><span></span><span></span></div><span>Built around you, not a fixed package.</span></div>
+        </div>
+        <div class="floating-note"><span class="icon-check" aria-hidden="true">✓</span> More clarity, less moving stress</div>
+      </div>
+    </div>
+  </section>
+  <section class="ticker" aria-label="Service focus"><div class="container ticker-inner"><span>SMARTER PLANNING</span><span class="ticker-star">✳</span><span>LOCAL EXPERIENCE</span><span class="ticker-star">✳</span><span>BETTER QUESTIONS</span><span class="ticker-star">✳</span><span>PERSONALIZED NEXT STEPS</span></div></section>
+  <section id="residential" class="section residential-section" aria-labelledby="res-title">
+    <div class="container">
+      <div class="section-head"><div><div class="eyebrow muted">01 / RESIDENTIAL MOVES</div><h2 id="res-title">Three ways to move.<br><em>One way to choose.</em></h2></div><p>Every move deserves thoughtful handling. Pick the level of service that best matches your priorities; the actual scope is confirmed after review.</p></div>
+      <div class="plan-grid">
+        <article class="plan-card"><div class="plan-top"><span class="plan-index">01 / ESSENTIAL</span><span class="plan-symbol">↗</span></div><div class="plan-icon"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M6 29V14h19v15H6Zm19-10h7l6 8v2H25V19ZM13 34a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm20 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></div><h3>Essential</h3><p class="plan-kicker">Smart & straightforward.</p><p>A practical move focused on the essentials and mindful of your budget.</p><ul><li>Core moving needs</li><li>Simple, efficient scope</li><li>Extras only when needed</li></ul><button type="button" class="plan-link" data-plan="Essential">Explore Essential <span>↗</span></button></article>
+        <article class="plan-card is-featured"><div class="plan-top"><span class="plan-index">02 / PROTECTED</span><span class="plan-chip">POPULAR STARTING POINT</span></div><div class="plan-icon"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="m22 5 15 6v10c0 9-5.2 14.2-15 18-9.8-3.8-15-9-15-18V11l15-6Z" stroke="currentColor" stroke-width="2.5"/><path d="m15 22 5 5 10-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Protected</h3><p class="plan-kicker">Extra attention. Less worry.</p><p>For furniture, delicate items, and the details that matter more to you.</p><ul><li>Extra furniture protection options</li><li>Fragile-item planning</li><li>Thoughtful handling priorities</li></ul><button type="button" class="plan-link" data-plan="Protected">Explore Protected <span>↗</span></button></article>
+        <article class="plan-card"><div class="plan-top"><span class="plan-index">03 / WHITE GLOVE</span><span class="plan-symbol">↗</span></div><div class="plan-icon"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="m22 4 5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></div><h3>White Glove</h3><p class="plan-kicker">For the things you treasure.</p><p>Premium-level planning for high-value, sensitive, or complex items.</p><ul><li>Specialty packing discussion</li><li>High-value item considerations</li><li>Detailed, careful move planning</li></ul><button type="button" class="plan-link" data-plan="White Glove">Explore White Glove <span>↗</span></button></article>
+      </div>
+      <p class="disclaimer-inline">Move styles are planning categories, not fixed-price packages or guarantees of services. Final scope and availability depend on the service provider and written agreement.</p>
+    </div>
+  </section>
+  <section id="office" class="section office-section" aria-labelledby="office-title"><div class="container office-grid"><div class="office-art"><div class="office-art-top"><span>MM / OFFICE</span><span>004 ↗</span></div><div class="office-art-buildings" aria-hidden="true"><div class="building building-a"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="building building-b"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="building building-c"><i></i><i></i><i></i><i></i></div></div><div class="office-art-footer">BUSINESS MOVES REQUIRE<br>BETTER PLANNING.</div></div><div class="office-copy"><div class="eyebrow light">02 / COMMERCIAL & OFFICE MOVES</div><h2 id="office-title">Your business moves.<br><em>We look closer.</em></h2><p>Office relocations involve workstations, technology, building access and downtime. That deserves an in-person look before anyone recommends a plan.</p><div class="on-site"><span class="on-site-icon">↗</span><div><strong>On-site estimate only</strong><span>Every office inquiry starts with an in-person walkthrough request. No instant office quotes or video-only estimates.</span></div></div><button type="button" class="btn btn-accent" data-start="office">Request an on-site estimate <span>↗</span></button></div></div></section>
+  <section id="how" class="section how-section"><div class="container"><div class="section-head"><div><div class="eyebrow muted">03 / THE PROCESS</div><h2>Good moves start<br><em>with good questions.</em></h2></div><p>Skip the confusing sales pitch. Understand your needs, then discuss a suitable next step.</p></div><div class="process-grid"><div class="process-card"><span class="process-num">01</span><div class="process-glyph">◈</div><h3>Tell us about it</h3><p>Where, when, how big, and what you're most concerned about.</p></div><div class="process-card"><span class="process-num">02</span><div class="process-glyph">⌁</div><h3>See a starting point</h3><p>Residential moves get a suggested style. Office moves go straight to an on-site estimate request.</p></div><div class="process-card"><span class="process-num">03</span><div class="process-glyph">↗</div><h3>Discuss next steps</h3><p>We review the details and follow up. No automatic booking or binding price.</p></div></div></div></section>
+  <section id="about" class="section about-section" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="eyebrow muted">04 / THE STORY</div>
+      <h2 id="about-title">Built by a mover.<br><em>Made for your priorities.</em></h2>
+      <p>After more than four years working on Bay Area moves—from crews and truck driving to preparing estimates—I noticed how often the conversation begins with an hourly rate.</p>
+      <p>But a great move isn't just a number on a quote. It's a plan that reflects what matters most to the person moving.</p>
+      <button type="button" class="text-link" data-start="residential">Let's plan yours <span aria-hidden="true">↗</span></button>
+    </div>
+    <aside class="founder-note" aria-labelledby="founder-title">
+      <div class="founder-note__eyebrow">A NOTE FROM THE FOUNDER</div>
+      <h3 id="founder-title">Every move has a different definition of <em>done right.</em></h3>
+      <p>Some people want to finish quickly and efficiently. Others want extra care for their belongings and peace of mind along the way.</p>
+      <p>That's why I created MoveMatch SF: to understand those priorities first and help people find the moving approach that fits—not just the hourly rate that looks best on paper.</p>
+      <div class="founder-note__signature"><strong>Dmitry Nesterov</strong><span>Founder, MoveMatch SF · 4+ years in Bay Area moving</span></div>
+    </aside>
+  </div>
+</section>
+  <section class="section cta-section"><div class="container cta-card"><div><div class="eyebrow">START WITH A BETTER PLAN</div><h2>Ready to make<br><em>your next move?</em></h2><p>Residential or office, tell us what you're planning and we'll help with the next step.</p></div><button type="button" class="btn btn-ink-outline" data-start="residential">Start your move profile <span>↗</span></button></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-symbol" aria-hidden="true"><i></i><i></i></span> MoveMatch<span class="brand-sf">SF</span></a><p>Thoughtful moving plans for the Bay Area.</p></div><div class="footer-contact"><div class="footer-heading">Get in touch</div><a href="#" data-contact="phone" hidden></a><a href="#" data-contact="email" hidden></a><button type="button" data-start="residential" class="footer-link">Send an inquiry ↗</button></div><div class="footer-contact"><div class="footer-heading">Explore</div><a href="#residential">Residential styles</a><a href="#office">Office moves</a><a href="/privacy.html">Privacy</a></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> MoveMatch SF</span><span>Planning information only. No binding estimates or transportation booking through this website.</span></div></footer>
 
-  <script src="/js/recommendation-engine.js"></script>
-  <script src="/js/app.js"></script>
+<div class="modal-overlay" id="modal" hidden>
+ <div class="wizard" role="dialog" aria-modal="true" aria-labelledby="wizard-title">
+  <div class="wizard-header"><div class="brand brand-small"><span class="brand-symbol" aria-hidden="true"><i></i><i></i></span> MoveMatch<span class="brand-sf">SF</span></div><button type="button" id="close-modal" class="close-modal" aria-label="Close move planner">×</button></div>
+  <div class="wizard-progress"><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><span id="progress-text">Step 1 of 4</span></div>
+  <form name="move-request" id="move-form" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+   <input type="hidden" name="form-name" value="move-request">
+   <p class="visually-hidden"><label>Do not fill this out <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+   <!-- Legacy field aliases keep the existing Zapier SMS mappings working after the v4 upgrade. -->
+   <input type="hidden" name="customer-name" id="legacy-customer-name">
+   <input type="hidden" name="phone" id="legacy-phone">
+   <input type="hidden" name="move-type" id="legacy-move-type">
+   <input type="hidden" name="source" id="lead-source"><input type="hidden" name="campaign" id="lead-campaign"><input type="hidden" name="recommended_style" id="recommended-style"><input type="hidden" name="consultation_type" id="consultation-type"><input type="hidden" name="site_version" value="v4">
+   <fieldset class="wizard-step active" data-step="1"><legend class="visually-hidden">Move category</legend><div class="eyebrow muted">STEP 01 / THE BASICS</div><h2 id="wizard-title">What are we moving?</h2><p class="wizard-lead">Let's start with the big picture.</p><div class="option-grid"><label class="choice"><input type="radio" name="move_type" value="Residential" required><span class="choice-icon">⌂</span><strong>My home</strong><small>Apartment, house, or condo</small></label><label class="choice"><input type="radio" name="move_type" value="Office / Commercial" required><span class="choice-icon">▦</span><strong>Office / commercial</strong><small>Workspace or business relocation</small></label></div></fieldset>
+   <fieldset class="wizard-step" data-step="2"><legend class="visually-hidden">Move details</legend><div class="eyebrow muted">STEP 02 / MOVE DETAILS</div><h2>Tell us the essentials.</h2><p class="wizard-lead">A few details help us understand your move.</p><div class="form-grid"><label class="field"><span>Preferred moving date</span><input name="move_date" type="date" required></label><label class="field"><span>Pickup ZIP code</span><input name="pickup_zip" type="text" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="94110" required></label><label class="field"><span>Destination ZIP code</span><input name="destination_zip" type="text" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="94015" required></label><div class="field" data-only="residential"><label for="home-size">Home size</label><select id="home-size" name="home_size" required><option value="">Select size</option><option>Studio</option><option>1 bedroom</option><option>2 bedrooms</option><option>3 bedrooms</option><option>4+ bedrooms / house</option></select></div><div class="field" data-only="office"><label for="office-size">Approximate office size</label><select id="office-size" name="office_size" required><option value="">Select size</option><option>Under 10 workstations</option><option>10–25 workstations</option><option>26–50 workstations</option><option>50+ workstations</option><option>Other / not sure</option></select></div><div class="field full" data-only="office"><label for="office-address">Address for the on-site walkthrough</label><input id="office-address" name="office_site_address" type="text" placeholder="Street address, city, state" required></div></div></fieldset>
+   <fieldset class="wizard-step" data-step="3"><legend class="visually-hidden">Special considerations</legend><div class="eyebrow muted">STEP 03 / PRIORITIES</div><h2 id="step3-title">What matters most?</h2><p class="wizard-lead" id="step3-intro">Choose your priority, then add any special details.</p>
+    <div data-only="residential"><div class="priority-choices"><label class="priority-item"><input type="radio" name="priority" value="Budget / streamlined" required><span><b>Keep it simple</b><small>Budget and efficiency come first</small></span></label><label class="priority-item"><input type="radio" name="priority" value="Extra care" required><span><b>Extra protection</b><small>Furniture and fragile items need attention</small></span></label><label class="priority-item"><input type="radio" name="priority" value="Premium / specialty" required><span><b>Premium handling</b><small>High-value, fragile, or specialty pieces</small></span></label></div><div class="field top-space"><label for="special-items">Special items or services</label><select id="special-items" name="special_items"><option value="None selected">None / not sure</option><option>TVs / electronics</option><option>Artwork / antiques</option><option>Piano / safe / oversized pieces</option><option>Full packing / unpacking</option><option>Several special items</option></select></div></div>
+    <div data-only="office"><div class="office-in-form"><span class="onsite-tag">ON-SITE ESTIMATE REQUIRED</span><strong>We start with an in-person walkthrough.</strong><p>No phone-only or video-only estimates for office relocations. Request a preferred walkthrough date and share building constraints.</p></div><div class="form-grid"><label class="field"><span>Preferred on-site visit date</span><input type="date" name="office_visit_date" required></label><div class="field"><label for="business-access">Building access</label><select name="office_access" id="business-access"><option>Not sure yet</option><option>Elevator / loading dock</option><option>Stairs / restricted access</option><option>Multiple locations</option></select></div><div class="field full"><label for="downtime">Preferred moving window</label><select id="downtime" name="office_moving_window"><option>Flexible</option><option>Business hours</option><option>Evenings / overnight</option><option>Weekend</option></select></div></div></div>
+   </fieldset>
+   <fieldset class="wizard-step" data-step="4"><legend class="visually-hidden">Contact information</legend><div class="eyebrow muted">STEP 04 / NEXT STEP</div><h2>Let's make a plan.</h2><p class="wizard-lead" id="final-intro">Share your contact information, and we'll review your move details.</p><div class="recommended-box"><div><span class="mini-label">YOUR NEXT STEP</span><strong id="result-style">Protected move</strong></div><p id="result-copy">A suggested style — not a final quote.</p></div><div class="form-grid"><label class="field"><span>Your name</span><input name="customer_name" type="text" autocomplete="name" placeholder="Full name" maxlength="100" required></label><label class="field"><span>Phone</span><input name="customer_phone" type="tel" autocomplete="tel" placeholder="(415) 555-0100" maxlength="30" required></label><label class="field full"><span>Email</span><input name="customer_email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="150" required></label><label class="field full"><span>Anything else we should know? (optional)</span><textarea name="notes" rows="3" maxlength="1500" placeholder="Access details, building rules, timing, fragile items..."></textarea></label></div><label class="consent"><input type="checkbox" name="consent_to_contact" value="Yes" required><span>I agree to be contacted about this moving inquiry by phone or email. I understand this is not a booking or a binding quote. <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy ↗</a></span></label></fieldset>
+   <div class="wizard-actions"><button type="button" id="wizard-back" class="btn btn-ghost" hidden>← Back</button><div class="status-message" id="form-status" role="status" aria-live="polite"></div><button type="button" id="wizard-next" class="btn btn-dark">Continue ↗</button><button type="submit" id="wizard-submit" class="btn btn-accent" hidden>Send request ↗</button></div>
+  </form>
+ </div>
+</div>
+<noscript><div class="noscript">JavaScript is needed to use the move planner. You can enable it in your browser, or check back later.</div></noscript>
 </body>
 </html>

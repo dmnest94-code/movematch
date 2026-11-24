@@ -1,0 +1,18 @@
+MoveMatch SF v4 — SMS-compatible edition (2026-11-24)
+
+This copy includes the public contact details already entered in your local VS Code file:
+Phone: (650) 619-3715
+Email: movematchsf@gmail.com
+
+IMPORTANT: v4 form fields differ from the older v0.3 website. This edition
+adds three compatibility form fields and populates them before submitting:
+customer-name, phone, move-type. This preserves the existing Zapier SMS
+field mappings used in the tested automation.
+
+Deploy to a preview branch before merging to main.
+After deploying: submit a NEW test residential lead and a NEW office lead.
+Confirm that each appears in Netlify Forms and that each triggers an actual
+SMS with the correct name, callback number and move type.
+
+Netlify Forms email notifications must be configured separately in Netlify.
+Do not publish printed QR codes until the production domain is confirmed live.
