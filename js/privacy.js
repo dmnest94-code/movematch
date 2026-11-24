@@ -1,0 +1,1 @@
+window.addEventListener('DOMContentLoaded',()=>{const target=document.getElementById('privacy-contact');const email=window.MOVEMATCH_CONFIG?.email;if(email&&/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){const a=document.createElement('a');a.href=`mailto:${email}`;a.textContent=email;target.replaceChildren(a);}});
